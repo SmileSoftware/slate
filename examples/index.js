@@ -20,6 +20,7 @@ import Plugins from './plugins'
 import RTL from './rtl'
 import ReadOnly from './read-only'
 import RichText from './rich-text'
+import SmileTest from './smiletest'
 import Tables from './tables'
 
 import DevHugeDocument from './dev/huge-document'
@@ -42,6 +43,7 @@ const { NODE_ENV } = process.env
 
 const EXAMPLES = [
   ['Rich Text', RichText, '/rich-text'],
+  ['Smile Test', SmileTest, '/smiletest'],
   ['Plain Text', PlainText, '/plain-text'],
   ['Hovering Menu', HoveringMenu, '/hovering-menu'],
   ['Links', Links, '/links'],
