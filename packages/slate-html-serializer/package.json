@@ -1,7 +1,7 @@
 {
   "name": "@macgreg/slate-html-serializer",
   "description": "An HTML serializer for Slate editors.",
-  "version": "0.7.2",
+  "version": "0.7.3-alpha.0",
   "license": "MIT",
   "repository": "git://github.com/ianstormtaylor/slate.git",
   "main": "lib/slate-html-serializer.js",
@@ -22,9 +22,9 @@
     "slate": ">=0.32.0"
   },
   "devDependencies": {
+    "@macgreg/slate-hyperscript": "^0.10.3-alpha.0",
     "mocha": "^2.5.3",
-    "slate": "^0.40.2",
-    "@macgreg/slate-hyperscript": "^0.10.2"
+    "slate": "^0.40.2"
   },
   "scripts": {
     "clean": "rm -rf ./dist ./lib ./node_modules"
