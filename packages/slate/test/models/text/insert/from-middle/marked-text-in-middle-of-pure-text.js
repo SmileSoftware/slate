@@ -2,7 +2,7 @@
 
 import { Set } from 'immutable'
 import h from '../../../../helpers/h'
-import { Mark } from 'slate'
+import { Mark } from '@macgreg/slate'
 
 export const input = <text>CatCute</text>[0]
 

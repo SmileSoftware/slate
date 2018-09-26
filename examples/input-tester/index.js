@@ -1,5 +1,5 @@
-import { Editor, findRange } from 'slate-react'
-import { Value } from 'slate'
+import { Editor, findRange } from '@macgreg/slate-react'
+import { Value } from '@macgreg/slate'
 
 import React from 'react'
 import styled from 'react-emotion'

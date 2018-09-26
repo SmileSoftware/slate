@@ -1,9 +1,9 @@
 import Debug from 'debug'
 import React from 'react'
-import SlateTypes from 'slate-prop-types'
+import SlateTypes from '@macgreg/slate-prop-types'
 import Types from 'prop-types'
-import warning from 'slate-dev-warning'
-import { Schema, Stack } from 'slate'
+import warning from '@macgreg/slate-dev-warning'
+import { Schema, Stack } from '@macgreg/slate'
 import memoizeOne from 'memoize-one'
 
 import EVENT_HANDLERS from '../constants/event-handlers'

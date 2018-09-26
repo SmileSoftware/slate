@@ -1,7 +1,7 @@
 /** @jsx h */
 
 import { List } from 'immutable'
-import { Mark } from 'slate'
+import { Mark } from '@macgreg/slate'
 import h from '../../../../helpers/h'
 
 export const input = <i />[0]
