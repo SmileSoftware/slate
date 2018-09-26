@@ -1,6 +1,6 @@
 /** @jsx h */
 
-import h from 'slate-hyperscript'
+import h from '@macgreg/slate-hyperscript'
 
 export const input = (
   <value normalize={false}>

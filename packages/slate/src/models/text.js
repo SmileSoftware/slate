@@ -1,5 +1,5 @@
 import isPlainObject from 'is-plain-object'
-import warning from 'slate-dev-warning'
+import warning from '@macgreg/slate-dev-warning'
 import { List, OrderedSet, Record, Set } from 'immutable'
 
 import Leaf from './leaf'

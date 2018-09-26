@@ -1,7 +1,7 @@
 /** @jsx h */
 
 import h from '../../../helpers/h'
-import { Data } from 'slate'
+import { Data } from '@macgreg/slate'
 
 export default function(change) {
   change.setBlocks({

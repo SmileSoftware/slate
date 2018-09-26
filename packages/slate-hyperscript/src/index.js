@@ -10,7 +10,7 @@ import {
   Selection,
   Text,
   Value,
-} from 'slate'
+} from '@macgreg/slate'
 
 /**
  * Point classes that can be created at different points in the document and

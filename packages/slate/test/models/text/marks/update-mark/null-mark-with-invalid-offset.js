@@ -1,6 +1,6 @@
 /** @jsx h */
 
-import { Mark } from 'slate'
+import { Mark } from '@macgreg/slate'
 import h from '../../../../helpers/h'
 
 export const input = <b />[0]

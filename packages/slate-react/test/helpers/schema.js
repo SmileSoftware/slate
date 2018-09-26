@@ -1,4 +1,4 @@
-import { Schema } from 'slate'
+import { Schema } from '@macgreg/slate'
 
 const schema = Schema.create({
   blocks: {
