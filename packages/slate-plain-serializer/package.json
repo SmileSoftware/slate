@@ -1,5 +1,5 @@
 {
-  "name": "slate-plain-serializer",
+  "name": "smile-slate-plain-serializer",
   "description": "A plain text serializer for Slate editors.",
   "version": "0.6.2",
   "license": "MIT",
