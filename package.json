@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "slate-packages",
+  "name": "smile-slate-packages",
   "workspaces": [
     "packages/*"
   ],
