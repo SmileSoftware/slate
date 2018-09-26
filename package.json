@@ -86,7 +86,7 @@
     "webpack-dev-server": "^2.11.1"
   },
   "peerDependencies": {
-    "slate": "*",
+    "@macgreg/slate": "*",
     "@macgreg/slate-html-serializer": "*",
     "@macgreg/slate-plain-serializer": "*",
     "@macgreg/slate-react": "*"
