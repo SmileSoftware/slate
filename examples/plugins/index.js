@@ -2,8 +2,8 @@ import Plain from '@macgreg/slate-plain-serializer'
 import { Editor } from '@macgreg/slate-react'
 
 import React from 'react'
-import CollapseOnEscape from '@macgreg/slate-collapse-on-escape'
-import SoftBreak from '@macgreg/slate-soft-break'
+import CollapseOnEscape from 'slate-collapse-on-escape'
+import SoftBreak from slate-soft-break'
 import styled from 'react-emotion'
 
 /**
