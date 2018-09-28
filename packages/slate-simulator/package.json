@@ -1,7 +1,7 @@
 {
   "name": "@macgreg/slate-simulator",
   "description": "A simulator for testing Slate editors and plugins.",
-  "version": "0.4.62-alpha.1",
+  "version": "0.4.62-alpha.2",
   "license": "MIT",
   "repository": "git://github.com/ianstormtaylor/slate.git",
   "main": "lib/slate-simulator.js",
