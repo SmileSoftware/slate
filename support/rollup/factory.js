@@ -23,6 +23,7 @@ function configure(pkg, env, target) {
   const isModule = target === 'module'
   const packageName = pkg.name.replace('@macgreg/', '');
   const input = `packages/${packageName}/src/index.js`
+  
   const deps = []
     .concat(pkg.dependencies ? Object.keys(pkg.dependencies) : [])
     .concat(pkg.peerDependencies ? Object.keys(pkg.peerDependencies) : [])
