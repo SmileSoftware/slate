@@ -3,7 +3,7 @@ import { Editor } from '@macgreg/slate-react'
 
 import React from 'react'
 import CollapseOnEscape from 'slate-collapse-on-escape'
-import SoftBreak from slate-soft-break'
+import SoftBreak from 'slate-soft-break'
 import styled from 'react-emotion'
 
 /**
