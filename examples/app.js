@@ -23,7 +23,7 @@ import MarkdownPreview from './markdown-preview'
 import MarkdownShortcuts from './markdown-shortcuts'
 import PasteHtml from './paste-html'
 import PlainText from './plain-text'
-import Plugins from './plugins'
+// import Plugins from './plugins'     Rid plugins example in our branch to avoid accidentally importing the ianstormtaylor version of Slate
 import RTL from './rtl'
 import ReadOnly from './read-only'
 import RichText from './rich-text'
@@ -56,7 +56,7 @@ const EXAMPLES = [
   ['Syncing Operations', SyncingOperations, '/syncing-operations'],
   ['Read-only', ReadOnly, '/read-only'],
   ['RTL', RTL, '/rtl'],
-  ['Plugins', Plugins, '/plugins'],
+  // ['Plugins', Plugins, '/plugins'],
   ['Forced Layout', ForcedLayout, '/forced-layout'],
   ['Huge Document', HugeDocument, '/huge-document'],
   ['History', History, '/history'],
