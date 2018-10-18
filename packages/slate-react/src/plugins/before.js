@@ -43,12 +43,25 @@ function BeforePlugin() {
   function onBeforeInput(event, change, editor) {
     if (editor.props.readOnly) return true
 
-    const isSynthetic = !!event.nativeEvent
+    // BB I believe there was a mistake in this refactoring:
+    // https://github.com/ianstormtaylor/slate/commit/f812816b7dcb2d4b2efa0d4ba12d4feac31850c9
+    // The effect of that change was:
+    //  Before:
+    //     Content had a beforeinput handler that was restricted only to mobile browsers
+    //  After:
+    //     The logic in the Content beforeinput handler was moved to the after plugin, and
+    //     support for/usage of beforeinput was extended to any browser that HAS_INPUT_EVENTS_LEVEL_2
+    //
+    // I think the mistake is that the below code makes the before plugin "kill" the beforeinput
+    // event so all that logic moved to the after plugin never triggers.
+    // Several things work better in Safari/WebKit with these lines commented out.
+
+    // const isSynthetic = !!event.nativeEvent
 
     // COMPAT: If the browser supports Input Events Level 2, we will have
     // attached a custom handler for the real `beforeinput` events, instead of
     // allowing React's synthetic polyfill, so we need to ignore synthetics.
-    if (isSynthetic && HAS_INPUT_EVENTS_LEVEL_2) return true
+    // if (isSynthetic && HAS_INPUT_EVENTS_LEVEL_2) return true
 
     debug('onBeforeInput', { event })
   }
@@ -145,9 +158,9 @@ function BeforePlugin() {
       // placeholder in case one is currently rendered. This should be handled
       // differently ideally, in a less invasive way?
       // (apply force re-render if isComposing changes)
-      if (editor.state.isComposing) {
-        editor.setState({ isComposing: false })
-      }
+      // if (editor.state.isComposing) {
+      //   editor.setState({ isComposing: false })
+      // }
     })
 
     debug('onCompositionEnd', { event })
@@ -169,9 +182,9 @@ function BeforePlugin() {
     // placeholder in case one is currently rendered. This should be handled
     // differently ideally, in a less invasive way?
     // (apply force re-render if isComposing changes)
-    if (!editor.state.isComposing) {
-      editor.setState({ isComposing: true })
-    }
+    // if (!editor.state.isComposing) {
+    //   editor.setState({ isComposing: true })
+    // }
 
     const { value } = change
     const { selection } = value
