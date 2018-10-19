@@ -14,6 +14,8 @@ The the package names are prefixed with our NPM username. This is part of NPM's 
 
 To publish:
 lerna publish
+select 'Custom Prerelease'
+Hit return to use the default prerelease identifier (alpha)
 
 To start:
 yarn start
