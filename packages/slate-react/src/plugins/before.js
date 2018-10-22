@@ -44,6 +44,7 @@ function BeforePlugin() {
     if (editor.props.readOnly) return true
 
     // BB I believe there was a mistake in this refactoring:
+
     // https://github.com/ianstormtaylor/slate/commit/f812816b7dcb2d4b2efa0d4ba12d4feac31850c9
     // The effect of that change was:
     //  Before:
@@ -186,6 +187,7 @@ function BeforePlugin() {
 
     //---------------------
     // below is https://github.com/ianstormtaylor/slate/pull/2218
+
     const { value } = change
     const { selection } = value
 

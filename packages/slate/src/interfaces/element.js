@@ -435,6 +435,7 @@ class ElementInterface {
 
   getDecorations(stack) {
     const decorations = stack.find('decorateNode', this)
+
     const list = Decoration.createList(decorations || []).map(dec =>
       this.resolveDecoration(dec)
     )

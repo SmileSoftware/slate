@@ -421,6 +421,7 @@ function AfterPlugin() {
       // The input event might have shortened the length, but this could also be a case of typing
       // in a Leaf which was created for a Decoration (so a Leaf not found in `leaves`)
       // Works fairly well but not in all cases.
+
       const nativeNode = findDOMNode(node, window)
 
       if (nativeNode && nativeNode.contains(anchorNode)) {

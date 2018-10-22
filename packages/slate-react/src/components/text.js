@@ -117,7 +117,7 @@ class Text extends React.Component {
       // Otherwise, if the decoration is in a single node, it's not ours.
       if (start.key === end.key) return false
 
-      // If the node's path is before the start path, ignore it.
+      // If the node's path is before the start path, ignore it
       const path = document.assertPath(key)
       if (PathUtils.compare(path, start.path) === -1) return false
 
