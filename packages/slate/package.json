@@ -1,5 +1,5 @@
 {
-  "name": "slate",
+  "name": "@macgreg/slate",
   "description": "A completely customizable framework for building rich text editors.",
   "version": "0.41.2",
   "license": "MIT",
@@ -18,7 +18,7 @@
     "esrever": "^0.2.0",
     "is-plain-object": "^2.0.4",
     "lodash": "^4.17.4",
-    "slate-dev-warning": "^0.0.1",
+    "@macgreg/slate-dev-warning": "^0.0.1",
     "type-of": "^2.0.1"
   },
   "peerDependencies": {
@@ -26,8 +26,8 @@
     "react": ">=0.14.0"
   },
   "devDependencies": {
-    "slate-dev-test-utils": "^0.0.1",
-    "slate-hyperscript": "^0.10.7"
+    "@macgreg/slate-dev-test-utils": "^0.0.1",
+    "@macgreg/slate-hyperscript": "^0.10.2"
   },
   "scripts": {
     "clean": "rm -rf ./dist ./lib ./node_modules"

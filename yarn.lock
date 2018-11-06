@@ -195,6 +195,22 @@
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/@emotion/utils/-/utils-0.7.1.tgz#e44e596d03c9f16ba3b127ad333a8a072bcb5a0a"
 
+"@macgreg/slate-dev-warning@^0.0.2-alpha.6":
+  version "0.0.2-alpha.6"
+  resolved "https://registry.yarnpkg.com/@macgreg/slate-dev-warning/-/slate-dev-warning-0.0.2-alpha.6.tgz#d59324dfca76465ec6b9e927fba5f4558ca0413f"
+
+"@macgreg/slate@^0.40.2":
+  version "0.40.3-alpha.6"
+  resolved "https://registry.yarnpkg.com/@macgreg/slate/-/slate-0.40.3-alpha.6.tgz#3e0e490bdf6665a24360c4c5c189ac662ea525b3"
+  dependencies:
+    "@macgreg/slate-dev-warning" "^0.0.2-alpha.6"
+    debug "^3.1.0"
+    direction "^0.1.5"
+    esrever "^0.2.0"
+    is-plain-object "^2.0.4"
+    lodash "^4.17.4"
+    type-of "^2.0.1"
+
 "@types/node@^6.0.46":
   version "6.0.83"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.83.tgz#dd022db01ac2c01c1057775e88ccffce96d1d6fe"
@@ -7439,16 +7455,6 @@ slash@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
 
-slate-collapse-on-escape@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/slate-collapse-on-escape/-/slate-collapse-on-escape-0.6.0.tgz#668f2318770608a09a25a95623f5fb4329a277bf"
-  dependencies:
-    to-pascal-case "^1.0.0"
-
-slate-soft-break@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/slate-soft-break/-/slate-soft-break-0.6.0.tgz#1e44815b7ff4ddada055bba14cd0d2d4ef0fd463"
-
 slice-ansi@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/slice-ansi/-/slice-ansi-1.0.0.tgz#044f1a49d8842ff307aad6b505ed178bd950134d"
@@ -8066,12 +8072,6 @@ to-object-path@^0.3.0:
   resolved "https://registry.yarnpkg.com/to-object-path/-/to-object-path-0.3.0.tgz#297588b7b0e7e0ac08e04e672f85c1f4999e17af"
   dependencies:
     kind-of "^3.0.2"
-
-to-pascal-case@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/to-pascal-case/-/to-pascal-case-1.0.0.tgz#0bbdc8df448886ba01535e543327048d0aa1ce78"
-  dependencies:
-    to-space-case "^1.0.0"
 
 to-regex-range@^2.1.0:
   version "2.1.1"

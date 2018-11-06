@@ -1,4 +1,4 @@
-import { Node } from 'slate'
+import { Node } from '@macgreg/slate'
 
 /**
  * Find the DOM node for a `key`.

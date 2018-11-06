@@ -1,7 +1,7 @@
 # Utils
 
 ```js
-import { KeyUtils } from 'slate'
+import { KeyUtils } from '@macgreg/slate'
 ```
 
 Utility functions that ship with Slate that may be useful for certain use cases.

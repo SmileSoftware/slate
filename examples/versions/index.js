@@ -1,5 +1,5 @@
-import { Value, Operation } from 'slate'
-import { Editor } from 'slate-react'
+import { Value, Operation } from '@macgreg/slate'
+import { Editor } from '@macgreg/slate-react'
 
 import React from 'react'
 import styled from 'react-emotion'

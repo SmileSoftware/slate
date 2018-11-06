@@ -1,5 +1,5 @@
 {
-  "name": "slate-simulator",
+  "name": "@macgreg/slate-simulator",
   "description": "A simulator for testing Slate editors and plugins.",
   "version": "0.4.66",
   "license": "MIT",
@@ -13,10 +13,10 @@
     "lib/"
   ],
   "peerDependencies": {
-    "slate": ">=0.32.0"
+    "@macgreg/slate": ">=0.32.0"
   },
   "devDependencies": {
-    "slate": "^0.41.2"
+    "@macgreg/slate": "^0.41.2"
   },
   "scripts": {
     "clean": "rm -rf ./dist ./lib ./node_modules"

@@ -1,6 +1,6 @@
 import fs from 'fs'
 import { basename, extname, resolve } from 'path'
-import { KeyUtils } from 'slate'
+import { KeyUtils } from '@macgreg/slate'
 
 export const fixtures = (...args) => {
   let fn = args.pop()

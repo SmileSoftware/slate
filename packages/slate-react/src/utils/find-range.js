@@ -1,5 +1,5 @@
 import getWindow from 'get-window'
-import { IS_IE, IS_EDGE } from 'slate-dev-environment'
+import { IS_IE, IS_EDGE } from '@macgreg/slate-dev-environment'
 
 import findPoint from './find-point'
 import findDOMPoint from './find-dom-point'

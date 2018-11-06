@@ -1,5 +1,5 @@
 {
-  "name": "slate-html-serializer",
+  "name": "@macgreg/slate-html-serializer",
   "description": "An HTML serializer for Slate editors.",
   "version": "0.7.7",
   "license": "MIT",
@@ -19,12 +19,12 @@
     "immutable": ">=3.8.1",
     "react": ">=0.14.0",
     "react-dom": ">=0.14.0",
-    "slate": ">=0.32.0"
+    "@macgreg/slate": ">=0.32.0"
   },
   "devDependencies": {
     "mocha": "^2.5.3",
-    "slate": "^0.41.2",
-    "slate-hyperscript": "^0.10.7"
+    "@macgreg/slate": "^0.40.2",
+    "@macgreg/slate-hyperscript": "^0.10.2"
   },
   "scripts": {
     "clean": "rm -rf ./dist ./lib ./node_modules"
