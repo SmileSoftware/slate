@@ -4,7 +4,7 @@ import Types from 'prop-types'
 import getWindow from 'get-window'
 import warning from 'tiny-warning'
 import throttle from 'lodash/throttle'
-import { IS_FIREFOX, HAS_INPUT_EVENTS_LEVEL_2 } from 'slate-dev-environment'
+import { IS_FIREFOX, HAS_INPUT_EVENTS_LEVEL_2 } from '@macgreg/slate-dev-environment'
 
 import EVENT_HANDLERS from '../constants/event-handlers'
 import Node from './node'

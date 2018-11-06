@@ -1,6 +1,6 @@
-import Plain from 'slate-plain-serializer'
-import { Editor, getEventTransfer } from 'slate-react'
-import { Value } from 'slate'
+import Plain from '@macgreg/slate-plain-serializer'
+import { Editor, getEventTransfer } from '@macgreg/slate-react'
+import { Value } from '@macgreg/slate'
 
 import React from 'react'
 import initialValue from './value.json'

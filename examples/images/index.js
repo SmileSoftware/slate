@@ -1,5 +1,5 @@
-import { Editor, getEventRange, getEventTransfer } from 'slate-react'
-import { Block, Value } from 'slate'
+import { Editor, getEventRange, getEventTransfer } from '@macgreg/slate-react'
+import { Block, Value } from '@macgreg/slate'
 
 import React from 'react'
 import initialValue from './value.json'

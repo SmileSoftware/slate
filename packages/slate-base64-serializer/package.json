@@ -1,5 +1,5 @@
 {
-  "name": "slate-base64-serializer",
+  "name": "@macgreg/slate-base64-serializer",
   "description": "A Base64 serializer for Slate editors.",
   "version": "0.2.77",
   "license": "MIT",
@@ -13,11 +13,11 @@
     "lib/"
   ],
   "peerDependencies": {
-    "slate": ">=0.32.0"
+    "@macgreg/slate": ">=0.32.0"
   },
   "devDependencies": {
     "mocha": "^2.5.3",
-    "slate": "^0.43.0"
+    "@macgreg/slate": "^0.43.0"
   },
   "dependencies": {
     "isomorphic-base64": "^1.0.2"

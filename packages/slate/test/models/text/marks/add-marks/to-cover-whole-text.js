@@ -1,7 +1,7 @@
 /** @jsx h */
 
 import h from '../../../../helpers/h'
-import { Mark } from 'slate'
+import { Mark } from '@macgreg/slate'
 
 export const input = <text>Cat is Cute</text>
 

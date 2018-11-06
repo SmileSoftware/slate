@@ -2,8 +2,8 @@ import assert from 'assert'
 import clean from './helpers/clean'
 import React from 'react'
 import ReactDOM from 'react-dom/server'
-import { Editor } from 'slate-react'
-import { fixtures } from 'slate-dev-test-utils'
+import { Editor } from '@macgreg/slate-react'
+import { fixtures } from '@macgreg/slate-dev-test-utils'
 import { JSDOM } from 'jsdom'
 
 describe('slate-react', () => {

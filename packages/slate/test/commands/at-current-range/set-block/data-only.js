@@ -2,7 +2,7 @@
 
 import h from '../../../helpers/h'
 
-import { Data } from 'slate'
+import { Data } from '@macgreg/slate'
 
 export default function(editor) {
   editor.setBlocks({ data: Data.create({ thing: 'value' }) })

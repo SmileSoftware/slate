@@ -1,7 +1,7 @@
 /** @jsx h */
 
 import h from '../../../helpers/h'
-import { Inline } from 'slate'
+import { Inline } from '@macgreg/slate'
 
 export default function(editor) {
   editor.insertInline(Inline.create('emoji'))

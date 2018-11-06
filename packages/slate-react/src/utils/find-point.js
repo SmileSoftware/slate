@@ -1,6 +1,6 @@
 import getWindow from 'get-window'
 import invariant from 'tiny-invariant'
-import { Value } from 'slate'
+import { Value } from '@macgreg/slate'
 
 import OffsetKey from './offset-key'
 

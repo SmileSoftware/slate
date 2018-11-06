@@ -82,12 +82,12 @@
     "webpack-dev-server": "^2.11.1"
   },
   "peerDependencies": {
-    "slate": "*",
-    "slate-dev-benchmark": "*",
-    "slate-dev-test-utils": "*",
-    "slate-html-serializer": "*",
-    "slate-plain-serializer": "*",
-    "slate-react": "*"
+    "@macgreg/slate": "*",
+    "@macgreg/slate-dev-benchmark": "*",
+    "@macgreg/slate-dev-test-utils": "*",
+    "@macgreg/slate-html-serializer": "*",
+    "@macgreg/slate-plain-serializer": "*",
+    "@macgreg/slate-react": "*"
   },
   "scripts": {
     "benchmark": "cross-env COMPARE=compare node --expose-gc ./tmp/benchmark/index.js",

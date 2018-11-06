@@ -1,11 +1,11 @@
 import Debug from 'debug'
 import React from 'react'
-import SlateTypes from 'slate-prop-types'
+import SlateTypes from '@macgreg/slate-prop-types'
 import Types from 'prop-types'
 import invariant from 'tiny-invariant'
 import memoizeOne from 'memoize-one'
 import warning from 'tiny-warning'
-import { Editor as Controller } from 'slate'
+import { Editor as Controller } from '@macgreg/slate'
 
 import EVENT_HANDLERS from '../constants/event-handlers'
 import ReactPlugin from '../plugins/react'

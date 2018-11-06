@@ -1,12 +1,12 @@
-import Base64 from 'slate-base64-serializer'
-import Plain from 'slate-plain-serializer'
+import Base64 from '@macgreg/slate-base64-serializer'
+import Plain from '@macgreg/slate-plain-serializer'
 import TRANSFER_TYPES from '../constants/transfer-types'
 import findDOMNode from './find-dom-node'
 import getWindow from 'get-window'
 import invariant from 'tiny-invariant'
 import removeAllRanges from './remove-all-ranges'
-import { IS_IE } from 'slate-dev-environment'
-import { Value } from 'slate'
+import { IS_IE } from '@macgreg/slate-dev-environment'
+import { Value } from '@macgreg/slate'
 import { ZERO_WIDTH_SELECTOR, ZERO_WIDTH_ATTRIBUTE } from './find-point'
 
 const { FRAGMENT, HTML, TEXT } = TRANSFER_TYPES

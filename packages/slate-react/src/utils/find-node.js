@@ -1,5 +1,5 @@
 import invariant from 'tiny-invariant'
-import { Value } from 'slate'
+import { Value } from '@macgreg/slate'
 
 /**
  * Find a Slate node from a DOM `element`.

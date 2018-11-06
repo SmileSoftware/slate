@@ -1,7 +1,7 @@
-import Plain from 'slate-plain-serializer'
+import Plain from '@macgreg/slate-plain-serializer'
 import assert from 'assert'
-import { Value } from 'slate'
-import { fixtures } from 'slate-dev-test-utils'
+import { Value } from '@macgreg/slate'
+import { fixtures } from '@macgreg/slate-dev-test-utils'
 
 describe('slate-plain-serializer', () => {
   fixtures(__dirname, 'deserialize', ({ module }) => {

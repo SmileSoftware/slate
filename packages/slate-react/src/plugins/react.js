@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text } from 'slate'
+import { Text } from '@macgreg/slate'
 
 import DOMPlugin from './dom'
 import Content from '../components/content'
