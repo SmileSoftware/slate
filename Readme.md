@@ -10,12 +10,13 @@ We have published this fork to a private NPM account so that we have control ove
 ## Before Publishing
 NPM only lets each version number get used once. When publishing changes that are outside of Slate's publish cycle publish using Lerna's prerealease versioning. This will append 'alpha.1' and so on to releases that are unique to us. This structure also allows us to easily tell if are using a Smile specific version of Slate. Publishing will bump the version in each Slate package contained in the monorepo regardless of it was edited. If you are simply updating to an upstream version of Slate be sure the version number chosen matches Slate’s.
 
-The the package names are prefixed with our NPM username. This is part of NPM's way of marking private packages. This is why @macgreg/ prefixes of all the Slate packages. Prior to building this repository and building anything that depends on it you'll need to sign into npm to gain access to the private packages. Check 1Password for details.
+The the package names are prefixed with our NPM username. This is part of NPM's way of marking private packages. This is why @macgreg/ prefixes of all the Slate packages. Pri .or to building this repository and building anything that depends on it you'll need to sign into npm to gain access to the private packages. Check 1Password for details.
 
 To publish:
 yarn build (must do this first otherwise changes, even if they are committed, won't be published)
 lerna publish
 select 'Custom Prerelease'
+Use 'alpha' as the release identifier
 Hit return to use the default prerelease identifier (alpha)
 
 To start:
