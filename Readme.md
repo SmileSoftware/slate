@@ -1,3 +1,28 @@
+# Smile Specific Notes:
+
+This is a fork of Slate's monorepo. It's built using Lerna and Yarn unlike Core. 
+
+## Why
+We have forked Slate's repository for a few reasons. First, if we make change to Slate to fix an issue we are reliant on Slate merging those changes and then publishing them to NPM so we can update our dependency. We can test those changes locally by linking a local copy of the repository but that solution doesn't ensure everyone building core is on the right version of Slate. Secondly, if a version bump includes bugs we don't want and changes we do there is no way select only the parts we want. 
+
+We have published this fork to a private NPM account so that we have control over our publish cycle and what commits we choose to absorb. 
+
+## Before Publishing
+NPM only lets each version number get used once. When publishing changes that are outside of Slate's publish cycle publish using Lerna's prerealease versioning. This will append 'alpha.1' and so on to releases that are unique to us. This structure also allows us to easily tell if are using a Smile specific version of Slate. Publishing will bump the version in each Slate package contained in the monorepo regardless of it was edited. If you are simply updating to an upstream version of Slate be sure the version number chosen matches Slate’s.
+
+The the package names are prefixed with our NPM username. This is part of NPM's way of marking private packages. This is why @macgreg/ prefixes of all the Slate packages. Prior to building this repository and building anything that depends on it you'll need to sign into npm to gain access to the private packages. Check 1Password for details.
+
+To publish:
+yarn build (must do this first otherwise changes, even if they are committed, won't be published)
+lerna publish
+select 'Custom Prerelease'
+Hit return to use the default prerelease identifier (alpha)
+
+To start:
+yarn start
+
+--------
+
 <p align="center">
   <a href="#"><img src="./docs/images/banner.png" /></a>
 </p>
