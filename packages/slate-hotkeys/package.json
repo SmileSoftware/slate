@@ -1,7 +1,7 @@
 {
   "name": "@macgreg/slate-hotkeys",
   "description": "A set of function to detect common keypresses in a platform-agnostic way",
-  "version": "0.2.6-alpha.0",
+  "version": "0.2.6-alpha.1",
   "license": "MIT",
   "repository": "git://github.com/ianstormtaylor/slate.git",
   "main": "lib/slate-hotkeys.js",
