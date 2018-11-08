@@ -16,14 +16,14 @@
     "type-of": "^2.0.1"
   },
   "peerDependencies": {
-    "@macgreg/slate": ">=0.41.2-alpha.0",
+    "@macgreg/slate": ">=0.41.3-alpha.2",
     "immutable": ">=3.8.1",
     "react": ">=0.14.0",
     "react-dom": ">=0.14.0"
   },
   "devDependencies": {
-    "@macgreg/slate": "^0.41.3-alpha.1",
-    "@macgreg/slate-hyperscript": "^0.10.8-alpha.1",
+    "@macgreg/slate": "^0.41.3-alpha.2",
+    "@macgreg/slate-hyperscript": "^0.10.8-alpha.2",
     "mocha": "^2.5.3"
   },
   "scripts": {

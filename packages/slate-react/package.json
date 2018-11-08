@@ -13,12 +13,12 @@
     "lib/"
   ],
   "dependencies": {
-    "@macgreg/slate-base64-serializer": "^0.2.69-alpha.1",
-    "@macgreg/slate-dev-environment": "^0.2.0-alpha.0",
-    "@macgreg/slate-dev-warning": "^0.0.1-alpha.0",
-    "@macgreg/slate-hotkeys": "^0.2.6-alpha.1",
-    "@macgreg/slate-plain-serializer": "^0.6.7-alpha.0",
-    "@macgreg/slate-prop-types": "^0.4.67-alpha.1",
+    "@macgreg/slate-base64-serializer": "^0.2.69-alpha.2",
+    "@macgreg/slate-dev-environment": "^0.2.1-alpha.9",
+    "@macgreg/slate-dev-warning": "^0.0.2-alpha.9",
+    "@macgreg/slate-hotkeys": "^0.2.6-alpha.2",
+    "@macgreg/slate-plain-serializer": "^0.6.3-alpha.9",
+    "@macgreg/slate-prop-types": "^0.4.67-alpha.2",
     "debug": "^3.1.0",
     "get-window": "^1.1.1",
     "is-window": "^1.0.2",
@@ -29,15 +29,15 @@
     "selection-is-backward": "^1.0.0"
   },
   "peerDependencies": {
-    "@macgreg/slate": ">=0.41.2-alpha.0",
+    "@macgreg/slate": ">=0.41.3-alpha.2",
     "immutable": ">=3.8.1",
     "react": ">=0.14.0",
     "react-dom": ">=0.14.0"
   },
   "devDependencies": {
-    "@macgreg/slate": "^0.41.3-alpha.1",
-    "@macgreg/slate-hyperscript": "^0.10.8-alpha.1",
-    "@macgreg/slate-simulator": "^0.4.67-alpha.1",
+    "@macgreg/slate": "^0.41.3-alpha.2",
+    "@macgreg/slate-hyperscript": "^0.10.8-alpha.2",
+    "@macgreg/slate-simulator": "^0.4.67-alpha.2",
     "immutable": "^3.8.1",
     "mocha": "^2.5.3"
   },

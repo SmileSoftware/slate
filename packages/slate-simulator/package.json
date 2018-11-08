@@ -13,10 +13,10 @@
     "lib/"
   ],
   "peerDependencies": {
-    "@macgreg/slate": ">=0.32.0"
+    "@macgreg/slate": ">=0.41.3-alpha.2"
   },
   "devDependencies": {
-    "@macgreg/slate": "^0.41.3-alpha.1"
+    "@macgreg/slate": "^0.41.3-alpha.2"
   },
   "scripts": {
     "clean": "rm -rf ./dist ./lib ./node_modules"

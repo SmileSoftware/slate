@@ -13,11 +13,11 @@
     "lib/"
   ],
   "peerDependencies": {
-    "@macgreg/slate": "0.41.2-alpha.0",
+    "@macgreg/slate": "0.41.3-alpha.2",
     "immutable": ">=3.8.1"
   },
   "devDependencies": {
-    "@macgreg/slate": "^0.41.3-alpha.1",
+    "@macgreg/slate": "^0.41.3-alpha.2",
     "mocha": "^2.5.3"
   },
   "scripts": {

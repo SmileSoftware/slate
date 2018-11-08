@@ -16,10 +16,10 @@
     "is-plain-object": "^2.0.4"
   },
   "peerDependencies": {
-    "@macgreg/slate": ">=0.41.2-alpha.0"
+    "@macgreg/slate": ">=0.41.3-alpha.2"
   },
   "devDependencies": {
-    "@macgreg/slate": "^0.41.3-alpha.1",
+    "@macgreg/slate": "^0.41.3-alpha.2",
     "mocha": "^2.5.3"
   },
   "scripts": {
