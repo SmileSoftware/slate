@@ -4,7 +4,10 @@ import Types from 'prop-types'
 import getWindow from 'get-window'
 import warning from '@macgreg/slate-dev-warning'
 import throttle from 'lodash/throttle'
-import { IS_FIREFOX, HAS_INPUT_EVENTS_LEVEL_2 } from '@macgreg/slate-dev-environment'
+import {
+  IS_FIREFOX,
+  HAS_INPUT_EVENTS_LEVEL_2,
+} from '@macgreg/slate-dev-environment'
 
 import EVENT_HANDLERS from '../constants/event-handlers'
 import Node from './node'
@@ -68,6 +71,7 @@ class Content extends React.Component {
 
   tmp = {
     isUpdatingSelection: false,
+    isComposing: false,
   }
 
   /**
@@ -308,12 +312,19 @@ class Content extends React.Component {
   onEvent(handler, event) {
     debug('onEvent', handler)
 
+    if (this.tmp.isComposing && handler == 'onCompositionEnd') {
+      this.tmp.isComposing = false
+    } else if (!this.tmp.isComposing && handler == 'onCompositionStart') {
+      this.tmp.isComposing = true
+    }
+
     // Ignore `onBlur`, `onFocus` and `onSelect` events generated
-    // programmatically while updating selection.
+    // programmatically while updating selection or composing.
     if (
-      this.tmp.isUpdatingSelection &&
+      (this.tmp.isUpdatingSelection || this.tmp.isComposing) &&
       (handler == 'onSelect' || handler == 'onBlur' || handler == 'onFocus')
     ) {
+      debug('ignoring selection event', { tmp: this.tmp })
       return
     }
 
