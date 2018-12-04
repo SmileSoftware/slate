@@ -1,7 +1,7 @@
 {
   "name": "@macgreg/slate-base64-serializer",
   "description": "A Base64 serializer for Slate editors.",
-  "version": "0.2.69-alpha.2",
+  "version": "0.2.69-alpha.3",
   "license": "MIT",
   "repository": "git://github.com/ianstormtaylor/slate.git",
   "main": "lib/slate-base64-serializer.js",
@@ -16,7 +16,7 @@
     "@macgreg/slate": ">=0.41.3-alpha.2"
   },
   "devDependencies": {
-    "@macgreg/slate": "^0.41.3-alpha.2",
+    "@macgreg/slate": "^0.41.3-alpha.3",
     "mocha": "^2.5.3"
   },
   "dependencies": {
