@@ -103,6 +103,7 @@ class Emojis extends React.Component {
           schema={this.schema}
           onChange={this.onChange}
           renderNode={this.renderNode}
+          onEventError={this.onEventError}
         />
       </div>
     )
@@ -136,6 +137,16 @@ class Emojis extends React.Component {
         )
       }
     }
+  }
+
+  /**
+   * On event error.
+   *
+   * @param {error} change
+   */
+
+  onEventError = error => {
+    throw error
   }
 
   /**

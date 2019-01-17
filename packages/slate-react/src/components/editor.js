@@ -38,6 +38,7 @@ class Editor extends React.Component {
     autoFocus: Types.bool,
     className: Types.string,
     onChange: Types.func,
+    onEventError: Types.func,
     placeholder: Types.any,
     plugins: Types.array,
     readOnly: Types.bool,
@@ -59,6 +60,7 @@ class Editor extends React.Component {
     autoFocus: false,
     autoCorrect: true,
     onChange: noop,
+    onEventError: noop,
     plugins: [],
     readOnly: false,
     schema: {},
@@ -294,9 +296,15 @@ class Editor extends React.Component {
    */
 
   onEvent = (handler, event) => {
-    this.change(change => {
-      this.stack.run(handler, event, change, this)
-    })
+    try {
+      this.change(change => {
+        this.stack.run(handler, event, change, this)
+      })
+    } catch (error) {
+      if (this.props.onEventError) {
+        this.props.onEventError(error)
+      }
+    }
   }
 
   /**
