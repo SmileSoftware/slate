@@ -18,8 +18,8 @@
   },
   "devDependencies": {
     "mocha": "^2.5.3",
-    "@macgreg/slate": "^0.47.8",
-    "@macgreg/slate-hyperscript": "^0.13.8"
+    "@macgreg/slate": "^0.47.8-alpha.0",
+    "@macgreg/slate-hyperscript": "^0.13.8-alpha.0"
   },
   "scripts": {
     "clean": "rm -rf ./dist ./lib ./node_modules"

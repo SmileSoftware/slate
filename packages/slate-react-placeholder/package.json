@@ -14,12 +14,12 @@
   ],
   "peerDependencies": {
     "react": ">=16.0.0",
-    "@macgreg/slate": ">=0.47.0",
-    "@macgreg/slate-react": ">=0.22.0"
+    "@macgreg/slate": ">=0.47.0-alpha.0",
+    "@macgreg/slate-react": ">=0.22.9-alpha.0"
   },
   "devDependencies": {
     "mocha": "^2.5.3",
-    "@macgreg/slate": "^0.47.8",
+    "@macgreg/slate": "^0.47.8-alpha.0",
     "tiny-invariant": "^1.0.1"
   },
   "scripts": {
