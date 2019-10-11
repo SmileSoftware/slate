@@ -1,6 +1,6 @@
 import invariant from 'tiny-invariant'
 import warning from 'tiny-warning'
-import { Value } from 'slate'
+import { Value } from '@macgreg/slate'
 
 import DATA_ATTRS from '../constants/data-attributes'
 import SELECTORS from '../constants/selectors'

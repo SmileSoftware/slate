@@ -1,6 +1,6 @@
-import { Editor } from 'slate-react'
-import PlaceholderPlugin from 'slate-react-placeholder'
-import { Value } from 'slate'
+import { Editor } from '@macgreg/slate-react'
+import PlaceholderPlugin from '@macgreg/slate-react-placeholder'
+import { Value } from '@macgreg/slate'
 import initialValue from './value.json'
 
 import React from 'react'

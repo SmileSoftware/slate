@@ -1,5 +1,5 @@
 {
-  "name": "slate-dev-environment",
+  "name": "@macgreg/slate-dev-environment",
   "description": "INTERNAL: A set of environment-related constants for Slate's core.",
   "version": "0.2.2",
   "license": "MIT",

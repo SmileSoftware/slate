@@ -1,6 +1,6 @@
 import React from 'react'
-import { Editor } from 'slate-react'
-import { Value } from 'slate'
+import { Editor } from '@macgreg/slate-react'
+import { Value } from '@macgreg/slate'
 import { css } from 'emotion'
 
 import initialValueAsJson from './value.json'

@@ -1,12 +1,12 @@
 import Debug from 'debug'
-import Hotkeys from 'slate-hotkeys'
+import Hotkeys from '@macgreg/slate-hotkeys'
 import getWindow from 'get-window'
 import {
   IS_FIREFOX,
   IS_IE,
   IS_IOS,
   HAS_INPUT_EVENTS_LEVEL_2,
-} from 'slate-dev-environment'
+} from '@macgreg/slate-dev-environment'
 
 import DATA_ATTRS from '../../constants/data-attributes'
 

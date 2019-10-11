@@ -11,8 +11,8 @@ In this guide, we'll show you how to add logic to save your Slate content to a d
 Let's start with a basic editor:
 
 ```js
-import { Editor } from 'slate-react'
-import { Value } from 'slate'
+import { Editor } from '@macgreg/slate-react'
+import { Value } from '@macgreg/slate'
 
 const initialValue = Value.fromJSON({
   document: {
@@ -187,8 +187,8 @@ But what if you want something other than JSON? Well, you'd need to serialize yo
 
 ```js
 // Switch to using the Plain serializer.
-import { Editor } from 'slate-react'
-import Plain from 'slate-plain-serializer'
+import { Editor } from '@macgreg/slate-react'
+import Plain from '@macgreg/slate-plain-serializer'
 
 const existingValue = localStorage.getItem('content')
 const initialValue = Plain.deserialize(

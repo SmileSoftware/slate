@@ -1,5 +1,5 @@
-import { Editor } from 'slate-react'
-import { Value } from 'slate'
+import { Editor } from '@macgreg/slate-react'
+import { Value } from '@macgreg/slate'
 
 import React from 'react'
 import { css } from 'emotion'
@@ -11,7 +11,7 @@ import empty from './empty.js'
 import remove from './remove.js'
 import { isKeyHotkey } from 'is-hotkey'
 import { Button, EditorValue, Icon, Instruction, Toolbar } from '../components'
-import { ANDROID_API_VERSION } from 'slate-dev-environment'
+import { ANDROID_API_VERSION } from '@macgreg/slate-dev-environment'
 
 /**
  * Define the default node type.

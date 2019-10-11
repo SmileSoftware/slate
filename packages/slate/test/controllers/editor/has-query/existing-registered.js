@@ -1,6 +1,6 @@
 /** @jsx h */
 
-import { Editor } from 'slate'
+import { Editor } from '@macgreg/slate'
 
 export const input = new Editor().registerQuery('customQuery')
 

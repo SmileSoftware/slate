@@ -1,6 +1,6 @@
-import Html from 'slate-html-serializer'
-import { Editor, getEventTransfer } from 'slate-react'
-import { Value } from 'slate'
+import Html from '@macgreg/slate-html-serializer'
+import { Editor, getEventTransfer } from '@macgreg/slate-react'
+import { Value } from '@macgreg/slate'
 
 import React from 'react'
 import initialValueAsJson from './value.json'

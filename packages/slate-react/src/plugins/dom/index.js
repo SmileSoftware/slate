@@ -1,4 +1,4 @@
-import { IS_ANDROID } from 'slate-dev-environment'
+import { IS_ANDROID } from '@macgreg/slate-dev-environment'
 
 import AndroidPlugin from '../android'
 import NoopPlugin from '../debug/noop'

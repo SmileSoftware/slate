@@ -1,4 +1,4 @@
-import { IS_IE } from 'slate-dev-environment'
+import { IS_IE } from '@macgreg/slate-dev-environment'
 
 /**
  * Cross-browser remove all ranges from a `domSelection`.

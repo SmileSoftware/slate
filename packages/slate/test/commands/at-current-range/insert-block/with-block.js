@@ -1,7 +1,7 @@
 /** @jsx h */
 
 import h from '../../../helpers/h'
-import { Block } from 'slate'
+import { Block } from '@macgreg/slate'
 
 export default function(editor) {
   editor.insertBlock(Block.create({ type: 'quote' }))

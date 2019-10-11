@@ -1,5 +1,5 @@
-import { Value } from 'slate'
-import { Editor } from 'slate-react'
+import { Value } from '@macgreg/slate'
+import { Editor } from '@macgreg/slate-react'
 import React from 'react'
 import { List } from 'immutable'
 

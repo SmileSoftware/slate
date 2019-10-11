@@ -1,6 +1,6 @@
 import React from 'react'
 import Types from 'prop-types'
-import SlateTypes from 'slate-prop-types'
+import SlateTypes from '@macgreg/slate-prop-types'
 import ImmutableTypes from 'react-immutable-proptypes'
 
 import OffsetKey from '../utils/offset-key'

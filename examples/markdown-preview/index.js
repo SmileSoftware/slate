@@ -1,5 +1,5 @@
-import Plain from 'slate-plain-serializer'
-import { Editor } from 'slate-react'
+import Plain from '@macgreg/slate-plain-serializer'
+import { Editor } from '@macgreg/slate-react'
 
 import Prism from 'prismjs'
 import React from 'react'

@@ -2,7 +2,7 @@
 
 import h from '../../../helpers/h'
 import { Set } from 'immutable'
-import { Mark } from 'slate'
+import { Mark } from '@macgreg/slate'
 
 export const input = (
   <value>

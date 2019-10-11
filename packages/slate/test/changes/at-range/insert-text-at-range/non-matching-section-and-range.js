@@ -1,6 +1,6 @@
 /** @jsx h */
 
-import { Point, Range } from 'slate'
+import { Point, Range } from '@macgreg/slate'
 
 import h from '../../../helpers/h'
 
