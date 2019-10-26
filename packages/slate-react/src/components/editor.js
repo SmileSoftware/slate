@@ -41,6 +41,7 @@ class Editor extends React.Component {
     defaultValue: SlateTypes.value,
     id: Types.string,
     onChange: Types.func,
+    onEventError: Types.func,
     options: Types.object,
     placeholder: Types.any,
     plugins: Types.array,
@@ -73,6 +74,7 @@ class Editor extends React.Component {
     onChange: () => {},
     options: {},
     placeholder: '',
+    onEventError: () => {},
     plugins: [],
     readOnly: false,
     schema: {},
@@ -191,7 +193,7 @@ class Editor extends React.Component {
         contentKey={contentKey}
         editor={this}
         id={id}
-        onEvent={(handler, event) => this.run(handler, event)}
+        onEvent={this.onEvent}
         readOnly={readOnly}
         role={role}
         spellCheck={spellCheck}
@@ -267,6 +269,23 @@ class Editor extends React.Component {
     }
 
     onChange(change)
+  }
+
+  /**
+   * On event.
+   *
+   * @param {String} handler
+   * @param {Event} event
+   */
+
+  onEvent = (handler, event) => {
+    try {
+      this.run(handler, event)
+    } catch (error) {
+      if (this.props.onEventError) {
+        this.props.onEventError(error)
+      }
+    }
   }
 
   /**
