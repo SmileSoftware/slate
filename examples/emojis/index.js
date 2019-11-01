@@ -1,10 +1,12 @@
-import { Editor } from '@macgreg/slate-react'
+import { Editor, getEventTransfer } from '@macgreg/slate-react'
 import { Value } from '@macgreg/slate'
 
 import React from 'react'
 import initialValueAsJson from './value.json'
 import { css } from 'emotion'
 import { Button, Icon, Toolbar } from '../components'
+
+const prefix = 'EMOJI-DATA-EMBED::'
 
 /**
  * Deserialize the initial editor value.
@@ -95,6 +97,8 @@ class Emojis extends React.Component {
           renderBlock={this.renderBlock}
           renderInline={this.renderInline}
           onEventError={this.onEventError}
+          onCopy={this.onCopy}
+          onPaste={this.onPaste}
         />
       </div>
     )
@@ -149,6 +153,63 @@ class Emojis extends React.Component {
       default:
         return next()
     }
+  }
+
+  parseEmojiStringIntoNodeProperties = text => {
+    try {
+      return JSON.parse(text.substring(prefix.length))
+    } catch (err) {
+      throw new Error('Unable to parse custom Emoji drag event data.')
+    }
+  }
+
+  onPaste = (event, editor, next) => {
+    const transfer = getEventTransfer(event)
+    const text = transfer.text
+
+    // If the transfer text has our prefix it is an emoji. To paste we need to rehydrate it and insert the node.
+    if (text.substring(0, prefix.length) === prefix) {
+      const nodeProps = this.parseEmojiStringIntoNodeProperties(text)
+
+      this.editor
+        .insertInline(nodeProps)
+        .moveToStartOfNextText()
+        .focus()
+
+      event.preventDefault()
+      return
+    }
+
+    next()
+  }
+
+  /**
+   * On copy.
+   *
+   * @param {error} change
+   */
+
+  onCopy = (event, editor, next) => {
+    const { value } = editor
+    const { document, selection } = value
+    const { start, end } = selection
+    let emojiNode = document.getClosestInline(start.path)
+
+    if (!emojiNode) {
+      emojiNode = document.getClosestInline(end.path)
+    }
+
+    if (emojiNode && emojiNode.type === 'emoji') {
+      const clipboardDictionary = { type: 'emoji', data: emojiNode.data }
+      const nodeString = JSON.stringify(clipboardDictionary)
+
+      const string = prefix + nodeString
+      event.clipboardData.setData('text/plain', string)
+      event.preventDefault()
+      return
+    }
+
+    return next()
   }
 
   /**

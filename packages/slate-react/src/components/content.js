@@ -409,8 +409,9 @@ class Content extends React.Component {
       throw err
     }
 
+    const allowEdit = el.isContentEditable || el.closest('[data-slate-void]')
     return (
-      el.isContentEditable &&
+      allowEdit &&
       (el === this.ref.current ||
         el.closest(SELECTORS.EDITOR) === this.ref.current)
     )
