@@ -1,7 +1,7 @@
 {
   "name": "@macgreg/slate-react",
   "description": "A set of React components for building completely customizable rich-text editors.",
-  "version": "0.22.10-alpha.1",
+  "version": "0.22.10-alpha.2",
   "license": "MIT",
   "repository": "git://github.com/ianstormtaylor/slate.git",
   "main": "lib/slate-react.js",
@@ -13,12 +13,12 @@
     "lib/"
   ],
   "dependencies": {
-    "@macgreg/slate-base64-serializer": "^0.2.112-alpha.1",
-    "@macgreg/slate-dev-environment": "^0.2.3-alpha.1",
-    "@macgreg/slate-hotkeys": "^0.2.10-alpha.1",
-    "@macgreg/slate-plain-serializer": "^0.7.11-alpha.1",
-    "@macgreg/slate-prop-types": "^0.5.42-alpha.1",
-    "@macgreg/slate-react-placeholder": "^0.2.9-alpha.1",
+    "@macgreg/slate-base64-serializer": "^0.2.112-alpha.2",
+    "@macgreg/slate-dev-environment": "^0.2.3-alpha.2",
+    "@macgreg/slate-hotkeys": "^0.2.10-alpha.2",
+    "@macgreg/slate-plain-serializer": "^0.7.11-alpha.2",
+    "@macgreg/slate-prop-types": "^0.5.42-alpha.2",
+    "@macgreg/slate-react-placeholder": "^0.2.9-alpha.2",
     "debug": "^3.1.0",
     "get-window": "^1.1.1",
     "is-window": "^1.0.2",
@@ -37,8 +37,8 @@
     "react-dom": ">=16.6.0"
   },
   "devDependencies": {
-    "@macgreg/slate": "^0.47.9-alpha.1",
-    "@macgreg/slate-hyperscript": "^0.13.9-alpha.1",
+    "@macgreg/slate": "^0.47.9-alpha.2",
+    "@macgreg/slate-hyperscript": "^0.13.9-alpha.2",
     "immutable": "^3.8.1",
     "mocha": "^2.5.3",
     "react-test-renderer": "^16.6.3"
