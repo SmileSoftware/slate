@@ -1,7 +1,7 @@
 {
   "name": "@macgreg/slate-react",
   "description": "A set of React components for building completely customizable rich-text editors.",
-  "version": "0.22.10-alpha.2",
+  "version": "0.22.10-alpha.3",
   "license": "MIT",
   "repository": "git://github.com/ianstormtaylor/slate.git",
   "main": "lib/slate-react.js",
